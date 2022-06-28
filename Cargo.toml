@@ -1,0 +1,16 @@
+[package]
+name = "nushell-demo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nu-cli = { git = "https://github.com/hamza1311/nushell", branch = "wasm-build" } # path = "../nushell/crates/nu-cli"
+nu-command = { git = "https://github.com/hamza1311/nushell", branch = "wasm-build" } # path = "../nushell/crates/nu-command"
+nu-protocol = { git = "https://github.com/hamza1311/nushell", branch = "wasm-build" } # path = "../nushell/crates/nu-protocol"
+nu-engine = { git = "https://github.com/hamza1311/nushell", branch = "wasm-build" } # path = "../nushell/crates/nu-engine"
+
+[patch.crates-io]
+reedline = { git = "https://github.com/nushell/reedline", branch = "main"}
+
